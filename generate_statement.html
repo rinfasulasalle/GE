@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/estadoCuenta.css">
+    <title>Generar Estado de Cuenta</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#date").datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: "-10:+0"
+            });
+        });
+    </script>
+<body>
+    <div class="container">
+        <h1>Generar Estado de Cuenta</h1>
+        <form action="/generate-statement" method="post" onsubmit="return validateForm()">
+            <label for="date">Fecha:</label>
+            <input type="text" id="date" name="date" placeholder="Selecciona una fecha" required>
+            <br>
+            <label for="format">Formato de Exportación:</label>
+            <select id="format" name="format" required>
+                <option value="csv">CSV</option>
+                <option value="pdf">PDF</option>
+                <option value="json">JSON</option>
+            </select>
+            <br>
+            <input type="submit" value="Generar Estado de Cuenta">
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>

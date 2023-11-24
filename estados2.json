@@ -1,0 +1,45 @@
+{
+    "dni": "87654321",
+    "nombre": "Usuario 2",
+    "cuentas": [
+        {
+            "numero": "003",
+            "saldo": 800.00,
+            "transacciones": [
+                {
+                    "fecha": "11/10/2023",
+                    "hora": "10:00 AM",
+                    "importe": 300.00,
+                    "tipoOperacion": "Depósito",
+                    "numeroOperacion": "12348",
+                    "nombreBeneficiario": "Depósito en efectivo",
+                    "entidadDestino": "Banco XYZ"
+                },
+                {
+                    "fecha": "16/10/2023",
+                    "hora": "4:00 PM",
+                    "importe": -200.00,
+                    "tipoOperacion": "Retiro",
+                    "numeroOperacion": "12349",
+                    "nombreBeneficiario": "Retiro en cajero",
+                    "entidadDestino": "Cajero Automático"
+                }
+            ]
+        },
+        {
+            "numero": "004",
+            "saldo": 600.00,
+            "transacciones": [
+                {
+                    "fecha": "11/10/2023",
+                    "hora": "11:30 AM",
+                    "importe": 400.00,
+                    "tipoOperacion": "Depósito",
+                    "numeroOperacion": "12350",
+                    "nombreBeneficiario": "Transferencia de otro usuario",
+                    "entidadDestino": "Usuario A"
+                }
+            ]
+        }
+    ]
+}

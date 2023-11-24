@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/transfeInter.css">
+    <title>Transferencia Interbancaria</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Transferencia Interbancaria</h1>
+        <form action="/interbank-transfer" method="post">
+            <label for="montoTransferir">Monto a Transferir:</label>
+            <input type="number" id="monto" name="monto" required>
+
+            <label for="token">Token:</label>
+            <input type="number" id="token" name="token" required>
+
+            <div class="desde-container">
+                <p class="desde-label">DESDE:</p>
+                <div class="cuenta-ahorros">
+                    <img src="/imagenes/tarjeta.png" alt="Cuenta de Ahorros">
+                    <p>Cuenta de Ahorros</p>
+                </div>
+            </div>
+
+            <div class="botones-container">
+                <button type="submit">Continuar</button>
+                <button type="button" onclick="cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function cancelar() {
+
+            window.location.href = '/select-account';
+        }
+
+        const numeroTransferenciaInput = document.getElementById("token");
+
+        document.addEventListener("DOMContentLoaded", function() {
+        numeroTransferenciaInput.addEventListener("input", function() {
+            const cleanedValue = numeroTransferenciaInput.value.replace(/\D/g, '');
+            const truncatedValue = cleanedValue.slice(0, 6);
+            numeroTransferenciaInput.value = truncatedValue;
+        });
+
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function(event) {
+            const numeroTransferenciaValue = numeroTransferenciaInput.value;
+
+            if (numeroTransferenciaValue.length < 6) {
+                event.preventDefault();
+                alert("El número de transferencia debe tener máximo 6 dígitos.");
+            }
+        });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #5229B5, #C88039);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    background-color: rgb(15, 9, 92);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.white-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 360px;
+    }
+
+h1 {
+    color: #5229B5;
+    font-size: 32px;
+    text-align: left;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 13px;
+    text-align: left;
+}
+
+h1 span.hola {
+    color: #fff;
+    font-size: 28px;
+}
+
+h1 span.cliente {
+    color: #C88039;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+button {
+    width: 200px;
+    padding: 50px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f3cbcb;
+    color: #000000;
+    text-align: left;
+    margin-left: 0;
+}
+
+button:hover {
+    background-color: #cbc1e7;
+}
+
+.custom-button {
+    position: absolute;
+    left:5%;
+    width: 100px;
+    padding: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f3d6d6;
+    text-align: left;
+    margin-left: 0;
+
+}
+
+.button-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.amount {
+    font-size: 20px;
+    color: #000000;
+    display: block;
+}
+
+.custom-button:hover {
+    background-color: #cbc1e7;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.select-btn {
+    position: relative;
+    background-color: rgb(75, 10, 75);
+    padding: 20px 30px;
+    font-size: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right:40px;
+}
+
+.select-btn .circle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, #5229B5, #C88039);
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.select-btn .plus {
+    position: absolute;
+    top: 35%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    margin-left: 25px;
+    color: #fff;
+    margin: 0;
+}
+
+.select-btn .button-text {
+    font-size: 13px;
+    color: #fff;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.orange-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f09a45;
+    width: 80px;
+    color: #0a0a0a;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.orange-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.button-text2 {
+    font-size: 12px;
+    color: #000;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: 5px; /* Ajusta la distancia del texto desde el borde inferior del círculo */
+    width: 100%;
+}

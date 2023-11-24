@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #5229B5, #C88039);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    position: absolute;
+    top: 25%;
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #5229B5;
+    font-size: 32px;
+    text-align: left;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #2e0985;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f3cbcb;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #cbc1e7;
+}
+
+
+.desde-container {
+    margin-top: 20px;
+    background-color: rgb(184, 158, 223);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.desde-label {
+    margin-left: 15px;
+    font-size: 14px;
+    color: #111111;
+}
+
+.cuenta-ahorros {
+    margin-right: 15px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+.cuenta-ahorros img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/ultimosMovimientos.css">
+    <title>Últimos Movimientos</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Últimos Movimientos</h1>
+        <p>Aquí puedes ver los últimos movimientos de tu cuenta:</p>
+
+        <!-- Tabla para mostrar los movimientos -->
+        <table id="movementsTable">
+            <!-- Encabezados de la tabla -->
+            <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Importe</th>
+                <th>Tipo de Operación</th>
+                <th>Número de Operación</th>
+                <th>Nombre de Beneficiario</th>
+                <th>Entidad Destino</th>
+            </tr>
+            <!-- Filas de la tabla -->
+            <tr>
+                <td>01/10/2023</td>
+                <td>09:30 AM</td>
+                <td>$1,000.00</td>
+                <td>Depósito</td>
+                <td>123456</td>
+                <td>John Doe</td>
+                <td>Banco XYZ</td>
+            </tr>
+            <tr>
+                <td>02/10/2023</td>
+                <td>03:45 PM</td>
+                <td>-$200.00</td>
+                <td>Retiro</td>
+                <td>789012</td>
+                <td>Jane Smith</td>
+                <td>Banco ABC</td>
+            </tr>
+            <!-- Agrega más filas para mostrar más movimientos -->
+        </table>
+
+        <!-- Botón para avanzar a la generación del estado de cuenta -->
+        <a href="/generate-statement"><input type="button" value="Generar Estado"></a>
+    </div>
+</body>
+<script>
+    document.getElementById('tableData').value = obtenerContenidoDeTabla();
+</script>
+</html>
